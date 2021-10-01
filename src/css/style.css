@@ -654,9 +654,88 @@ lll p {
 }
 
 
+.reviews {
+    
+
+}
+
+.reviews h3 {
+    font-size: 33px;
+padding-top: 110px;
+    color: #233042;
+    letter-spacing: -2px;
+
+}
+
+.reviews img {
+   max-width: 100px;
+
+
+}
+
+.iki {
+    padding-top: 42px;
+    font-size: 16px;
+    color: #243042;
+    text-align: center;
+
+    
+
+}
+
+
+.orange{
+padding-top: 60px;    
+  
+}
+
+
+.reviews p {
+    padding-top: 40px;
+    text-align: center;
+
+}
+
+
+.contact {
+    margin-top: 150px;
+    background: url(../img/contact%20%D1%84%D0%BE%D0%BD.jpg);
+    color: #ffffff;
+
+
+}
+
+.contact h3 {
+    
+    font-size: 33px;
+    padding-top: 115px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
 
 
 
+}
+
+
+
+
+
+
+.contact dfo {
+    padding-top: 30px;
+    max-width: 70px;
+    
+    
+   
+}
+
+.rkr{
+    padding-top: 35px;
+}
+
+.lhl{
+    padding-top: 60px;
+}
 
 .sms input:active {
     transform: scale(1.1);
