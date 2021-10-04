@@ -667,11 +667,7 @@ padding-top: 110px;
 
 }
 
-.reviews img {
-   max-width: 100px;
 
-
-}
 
 .iki {
     padding-top: 42px;
@@ -685,7 +681,9 @@ padding-top: 110px;
 
 
 .orange{
-padding-top: 60px;    
+padding-top: 60px;  
+    max-width: 10px;
+    min-width: 10px;
   
 }
 
@@ -731,10 +729,13 @@ padding-top: 60px;
 
 .rkr{
     padding-top: 35px;
+    max-width: 100px;
+    align-content: center;
 }
 
 .lhl{
     padding-top: 60px;
+    max-width: 100px;
 }
 
 .sms input:active {
