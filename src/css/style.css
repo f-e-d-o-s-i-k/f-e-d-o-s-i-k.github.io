@@ -242,7 +242,7 @@ nav {
 
 }
 
-.gug img{
+.gug {
     padding-top: 60px;
     border-radius: 50%;
     
@@ -259,10 +259,11 @@ nav {
     
 }
 
+@media
+
 
 .jij{
-    max-width: 110px;
-    height: auto;
+    
     
 min-width: 70px;
     min-height: 5px;
@@ -294,8 +295,7 @@ min-width: 70px;
 }
 
 .cgt  {
-    max-width: 110px;
-    height: auto;
+    
 }
 
 .what1 img{
@@ -384,6 +384,8 @@ lll p {
    
 }
 
+
+
 .bnb {
     
 }
@@ -394,14 +396,9 @@ lll p {
     text-align: center;
 }
 
-.xsq{
-     max-width: 110px;
-    height: auto;
-}
 
-.bvb{
-  
-}
+
+
 
 .calculate h3 {
     font-size: 45px;
@@ -437,9 +434,10 @@ lll p {
 
 .sroki {
     margin-top: 120px;
-    font-size: 20px;
+    font-size: 28px;
     color: #1c2534;
-    padding-left: 87px;
+
+    
     
 
 
@@ -476,10 +474,8 @@ lll p {
     padding-top: 92px;
 }
 
-.bvf{
-    max-width: 110px;
-    height: auto;
-}
+
+
 
 .pxp {
     padding-top: 100px;
@@ -542,6 +538,7 @@ lll p {
     color: #ff9100;
 
 }
+
 
 
 
@@ -681,9 +678,11 @@ padding-top: 110px;
 
 
 .orange{
-padding-top: 60px;  
-    max-width: 10px;
-    min-width: 10px;
+padding-top: 60px;
+    align-content: center;
+    letter-spacing: 10px;
+    
+   
   
 }
 
@@ -697,7 +696,8 @@ padding-top: 60px;
 
 .contact {
     margin-top: 150px;
-    background: url(../img/contact%20%D1%84%D0%BE%D0%BD.jpg);
+    background: url(../img/contact%20%D1%84%D0%BE%D0%BD.jpg) no-repeat ;
+    height: 1000px;
     color: #ffffff;
 
 
@@ -709,6 +709,7 @@ padding-top: 60px;
     padding-top: 115px;
     text-transform: uppercase;
     letter-spacing: -2px;
+    color: white;
 
 
 
@@ -719,12 +720,16 @@ padding-top: 60px;
 
 
 
-.contact dfo {
+.dfo {
     padding-top: 30px;
-    max-width: 70px;
+    
     
     
    
+}
+
+.xsx{
+    padding-top: 30px;
 }
 
 .rkr{
@@ -747,8 +752,98 @@ padding-top: 60px;
 }
 
 
-
+.adres{
+    padding-top: 50px;
+}
 
 .white-btn:visited {
     color: white;
 }
+
+
+.adres {
+    text-align: center;
+    padding-top: 80px;
+
+}
+
+
+
+.sms {
+    
+  padding-top: 40px;
+
+
+}
+
+.qwq {
+    padding-top: 45px;
+    float: left;
+   
+   
+
+
+}
+
+.wqw {
+    padding-top: 45px;
+    
+
+}
+
+.qwq textarea {
+    width: 350px;
+   
+    color: #d2d6dc;
+    height: 35px;
+    line-height: 35px;
+    resize: none;
+    
+
+}
+
+.wqw textarea {
+
+    width: 350px;
+    color: #d2d6dc;
+    line-height: 35px;
+    height: 35px;
+    resize: none;
+    
+
+}
+
+.jij {
+    padding-top: 15px;
+    padding-left: 10px
+}
+
+.jij textarea {
+    width: 722px;
+    height: 95px;
+    resize: none;
+}
+
+.sms input {
+    margin-top: 30px;
+    height: 45px;
+    width: 120px;
+    color: #fff;
+    background-color: transparent;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    transition: all 0.2s;
+    transform: scale(1);
+
+
+
+}
+
+    
+    
+    
+    
+    
+    
+    
+    
