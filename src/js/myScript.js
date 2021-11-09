@@ -40,8 +40,6 @@ function typeThree() {
 typeThree();
 
 
-let d = type();
-console.log d
 
 
 
