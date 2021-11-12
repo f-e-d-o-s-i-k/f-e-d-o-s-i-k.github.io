@@ -95,6 +95,9 @@ function typeThree() {
     
     
     if (Adaptability >2) alert(invThree);
+    
+    alert(sum+sumTwo+sumThree);
+    
 }
 typeThree();
 
