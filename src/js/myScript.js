@@ -1,9 +1,9 @@
-"use strict"
 
 
 
 
-let sum = 5000;
+
+/*let sum = 5000;
 let tipTwo = 0;
 let inv =0;
 function type() {
@@ -100,6 +100,17 @@ function typeThree() {
     
 }
 typeThree();
+
+
+$(document).ready(function(){
+    
+    $(".container").click(function(){
+    $(this).animate({opacity:0.25}, 1000);
+});
+});
+*/
+    
+
 
 
 
