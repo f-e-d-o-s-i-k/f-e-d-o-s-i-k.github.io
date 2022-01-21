@@ -2,8 +2,8 @@
 
 
 
-
-/*let sum = 5000;
+/*
+let sum = 5000;
 let tipTwo = 0;
 let inv =0;
 function type() {
@@ -102,16 +102,32 @@ function typeThree() {
 typeThree();
 
 
+
+});
+});
+
+    */
 $(document).ready(function(){
-    
-    $(".container").click(function(){
-    $(this).animate({opacity:0.25}, 1000);
-});
-});
-*/
-    
 
+$(window).scroll(() =>{
+    let scrollDistance = $(window).scrollTop();
+    
+    $(".section").each((i, el) =>{
+        
+        if($(el).offset().top - $("nav").outerHeight() <= scrollDistance){
+            $("nav a").each((i, el) => {
+                if ($(el).hasClass("active")){
+                    $(el).removeClass("active");
+                }
+            });
+            
+            $('nav li:eq('+ i +')').find('a').addClass('active');
+        }
+    });
+    
+});
 
+});
 
 
 
