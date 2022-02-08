@@ -1,6 +1,3 @@
-"use strict"
-
-
 
 
 let sum = 5000;
@@ -8,7 +5,7 @@ let tipTwo = 0;
 let inv =0;
 function type() {
     
-   let tip = prompt (" 0 - Сайт-визитка   1 - Корпоративный сайт   2 - Интернет-магазин ");
+   let tip = 1
     
     if (tip == 0)sum+=5000;
     
@@ -26,14 +23,14 @@ function type() {
     
     
     
-    if (tip<=2) alert(tipTwo);
-    if (tip<=2) alert(sum);
-    if (tip>2) alert(inv);
+    if (tip<=2) ;
+    if (tip<=2) ;
+    if (tip>2) ;
     
     
     
 }
-type();
+
 
 let invTwo = 0;
 let sumTwo = 0;
@@ -58,11 +55,11 @@ function typeTwo() {
     if (design >2)invTwo="Недопустимое значение";
     
     
-    if (design <=2) alert(designTwo);
-    if (design <=2) alert(sumTwo);
-    if (design >2) alert(invTwo);
+    if (design <=2) ;
+    if (design <=2) ;
+    if (design >2) ;
 }
-typeTwo();
+
 
 
 let sumThree = 5000;
@@ -84,22 +81,81 @@ function typeThree() {
     
     if (Adaptability == 2)AdaptabilityTwo="Под всё вместе";
     
-    if (Adaptability > 2)invThree="Недопустимое значение"
+    if (Adaptability > 2)invThree="Недопустимое значение";
     
     
     
-    if (Adaptability <=2) alert(AdaptabilityTwo);
+    if (Adaptability <=2) ;
     
-    if (Adaptability <=2) alert(sumThree);
+    if (Adaptability <=2) ;
     
-    
-    
-    if (Adaptability >2) alert(invThree);
+    if (Adaptability >2) ;
     
     alert(sum+sumTwo+sumThree);
     
+};
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+$(document).ready(function() {
+    
+    let options = { threshold: [1]};
+    let observer = new IntersectionObserver(onEntry, options);
+    let elements = $('.element-animation');
+    elements.each((i,el) => {
+        observer.observe(el);
+    });
+    
+    function onEntry (entry){
+  entry.forEach(change =>{
+      if (change.isIntersecting){
+          change.target.classList.add('show-animation');
+          
+      } 
+});
+
+
 }
-typeThree();
+    
+    $(window).scroll(() =>{
+    let scrollDistance = $(window).scrollTop();
+    
+    $(".section").each((i, el) =>{
+        
+        if($(el).offset().top - $("nav").outerHeight() <= scrollDistance){
+            $("nav a").each((i, el) => {
+                if ($(el).hasClass("active")){
+                    $(el).removeClass("active");
+                }
+            });
+            
+            $('nav li:eq('+ i +')').find('a').addClass('active');
+        }
+    });
+    
+});
+});
+
+
+
+$(document).ready(function(){
+
+
+});
 
 
 
@@ -110,14 +166,60 @@ typeThree();
 
 
 
+/*
+function dcf() {
+    var n = document.getElementById("sel").text;
+    document.getElementById("demo").innerHTML = n;
+};
+
+document.querySelector("#fgh").onclick = function(){
+    let p = document.getElementById("sel").text;
+  if (sel.options[sel.selectedIndex].value);
+};
 
 
+let n = (sel.options[sel.selectedIndex].value);
+*/
 
+document.querySelector("#fgh").onclick = function(){
+    let n = (sel.options[sel.selectedIndex].value);
+    if (n==1){
+    newvar ="15000"};
+    if (n == 2){
+        newvar = "20000"
+    };
+    if (n == 3){
+        newvar = "25000"
+    };
+    
+    let m = (nel.options[nel.selectedIndex].value);
+    
 
-
-
-
-
+    
+    if (m == 1)newvar=parseInt(newvar)+5000;
+    
+    if (m == 2)newvar=parseInt(newvar)+10000;
+    
+    if (m == 3)newvar=parseInt(newvar)+15000;
+    
+    
+    let d = (ada.options[ada.selectedIndex].value);
+    
+    if (d == 1)newvar=parseInt(newvar)+5000;
+    
+    if (d == 2)newvar=parseInt(newvar)+10000;
+    
+    if (d == 3)newvar=parseInt(newvar)+15000;
+    
+    
+    
+    
+    
+    
+    
+    
+  isid.innerHTML=newvar
+}
 
 
 
