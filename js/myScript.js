@@ -1,5 +1,5 @@
 
-
+/*
 let sum = 5000;
 let tipTwo = 0;
 let inv =0;
@@ -166,7 +166,7 @@ $(document).ready(function(){
 
 
 
-/*
+
 function dcf() {
     var n = document.getElementById("sel").text;
     document.getElementById("demo").innerHTML = n;
@@ -179,7 +179,7 @@ document.querySelector("#fgh").onclick = function(){
 
 
 let n = (sel.options[sel.selectedIndex].value);
-*/
+
 
 document.querySelector("#fgh").onclick = function(){
     let n = (sel.options[sel.selectedIndex].value);
@@ -211,15 +211,125 @@ document.querySelector("#fgh").onclick = function(){
     
     if (d == 3)newvar=parseInt(newvar)+15000;
     
+    // Начало новой функции с другими переменными 
+
+    
+    let e = (sel.options[sel.selectedIndex].value);
+    if (e==1){
+    newvar2 ="1 Неделя"};
+    if (e == 2){
+        newvar2 = "2 Неделя"
+    };
+    if (e == 3){
+        newvar2 = "3 Неделя"
+    };
+    
+    let df = (nel.options[nel.selectedIndex].value);
+    
+    let srok = parseInt(nel.options[nel.selectedIndex].value)+parseInt(sel.options[sel.selectedIndex].value)+parseInt(ada.options[ada.selectedIndex].value);
+    
+    console.log(srok);
+    
+    let week = ("Неделя");
+    
+    if (srok == 1)week = (" Неделя")
+    
+    if (srok > 1)week = (" Недели")
+    
+    if (srok < 5)week = (" Недели")
+    
+    if (srok >= 5)week = (" Недель")
+    
+    console.log(week);
+    
+    
+
+    
+    if (df == 1)newvar2=parseInt(newvar2)+parseInt(df) + " " + (week);
+    
+    if (df == 2)newvar2=parseInt(newvar2)+parseInt(df) + " " + (week);
+    
+    if (df == 3)newvar2=parseInt(newvar2)+parseInt(df) + " " + (week);
+    
+    
+    let de = (ada.options[ada.selectedIndex].value);
+    
+    if (de == 1)newvar2=parseInt(newvar2)+parseInt(df) + " " + (week);
+    
+    if (de == 2)newvar2=parseInt(newvar2)+parseInt(df) + " " + (week);
+    
+    if (de == 3)newvar2=parseInt(newvar2)+parseInt(df) + " " + (week);
     
     
     
     
+    newvar2 = (srok) + (week);
     
     
     
-  isid.innerHTML=newvar
-}
+    
+ isit.innerHTML=newvar2
+ isid.innerHTML=newvar
+}; 
+
+
+
+$(window).ready(function() {
+$('html, body').animate({scrollTop : 0});
+}); 
+
+
+*/
+
+
+
+
+
+
+
+
+
+$(document).ready(function() {
+    
+   $("#inputPassword3").mask("+7 (999) 999-99-99"); 
+ 
+});
+
+$(document).ready(function() {
+
+$('form').submit(function(event){
+    event.preventDefault();
+    
+    $.ajax({
+        type: "POST",
+        url: "php/mail.php",
+        data: $(this).serialize()
+        
+    }).done(function (){
+        $(this).find("input").val("");
+        alert("Успешно отправлено");
+        $("form").trigger("reset");
+    });
+    return false;
+    
+});
+
+});
+
+
+$(document).ready(function() {
+
+    
+    
+    
+});
+
+
+
+
+
+
+
 
 
 
